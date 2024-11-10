@@ -4,7 +4,11 @@ import os
 
 def check_proxy(proxy):
     url = 'https://httpbin.org/ip'
-    if proxy.startswith("http://"):
+    if not (proxy.startswith("http://") or proxy.startswith("https://") or proxy.startswith("socks4://") or proxy.startswith("socks5://")):
+        proxy = "http://" + proxy
+        print("Proxy {} tidak memiliki prefix, menambahkan 'http://' otomatis.".format(proxy))
+
+    if proxy.startswith("http://") or proxy.startswith("https://"):
         proxies = {'http': proxy, 'https': proxy}
     elif proxy.startswith("socks4://"):
         proxies = {'http': proxy, 'https': proxy}
@@ -60,7 +64,7 @@ def save_valid_proxy(proxy, output_file):
         print("Proxy {} sudah ada di file.".format(proxy))
 
 print("Proxy Checker | Shin Code\n")
-input_ = raw_input('Ur list: ')
+input_ = input('Ur list: ')
 proxy_list = read_proxy_list(input_)
 
 output_file = 'valid_proxies.txt'
