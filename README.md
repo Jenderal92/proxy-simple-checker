@@ -17,10 +17,6 @@ Tutor? : cari proxy drop di github  Simpan lalu checker
 # Buy Coffee :
 
 <li>Bitcoin $: 31mtLHqhaXXyCMnT2EU73U8fwYwigiEEU1</li>
-<li>Saweria $: https://saweria.co/Shin403</li>
-<li>Trakteer $: https://trakteer.id/shin403</li>
-<li>Buymeacoffee $: https://www.buymeacoffee.com/shin.code</li>
-<li>Ko-Fi $: https://ko-fi.com/shincode403</li>
 
 ![Screenshot_2024-11-10-16-09-36-288-edit_com termux](https://github.com/user-attachments/assets/93f48da7-c2a2-4a27-a188-ae54c33ebfb8)
 
